@@ -1,15 +1,17 @@
 package com.bridgeLabz.programs;
+import com.bridgeLabz.util.TreeUtility;
 import com.bridgeLabz.util.Utility;
 
 public class BinaryTree {
 
 	public static void main(String[] args) 
 	{
-		Utility u = new Utility();
+		TreeUtility u = new TreeUtility();
+		Utility ut = new Utility();
 		//Inserting item in tree
 		for (int i = 1; i <=5; i++) 
 		{
-			//int num= u.randomInput();
+			int num= ut.randomInput();
 			u.insertTree(i);
 		}
 		System.out.println("data inserted");

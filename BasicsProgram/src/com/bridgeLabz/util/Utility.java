@@ -525,5 +525,9 @@ public class Utility
 		}
 		return count;
 	}
+	public long inputLong() 
+	{
+		return sc.nextLong();
+	}
 	
 }

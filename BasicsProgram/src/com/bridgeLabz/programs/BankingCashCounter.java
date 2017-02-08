@@ -5,6 +5,7 @@
  *O/P -> True or False to Show Arithmetic Expression is balanced or not.
  */
 package com.bridgeLabz.programs;
+import com.bridgeLabz.util.ArrayQueue;
 import com.bridgeLabz.util.Utility;
 public class BankingCashCounter {
 
@@ -18,10 +19,11 @@ public class BankingCashCounter {
 		ArrayQueue aq = new ArrayQueue();
 		for(int i =1; i<=1;i++)
 		{
-			System.out.println("enter customer number");
+			System.out.println("enter customer name");
 			name = u.inputString();
 			System.out.print(name+"Added in queue");
 			aq.enqueue(new Customer(name));
+			
 			System.out.print("\nFor Amount Deposite enter 1:"
 							+"\nFor Amount withDraw enter 2: :");
 			int option = new Double(u.inputDouble()).intValue();
